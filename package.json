@@ -2,9 +2,9 @@
   "name": "element-in-viewport",
   "version": "1.0.0",
   "description": "Async module that resolves when a target element has entered the viewport at a threshold, using Intersection Observer API",
-  "main": "index.js",
+  "main": "lib/element-in-viewport.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/smrubin/element-in-viewport/issues"
   },
-  "homepage": "https://github.com/smrubin/element-in-viewport#readme"
+  "homepage": "https://github.com/smrubin/element-in-viewport#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
