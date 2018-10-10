@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/smrubin/element-in-viewport.svg?branch=master)](https://travis-ci.com/smrubin/element-in-viewport)
+
 ## element-in-viewport
 
 An async module that resolves when an element has entered the viewport at a certain percentage, using the Intersection Observer API.
