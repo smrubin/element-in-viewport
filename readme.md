@@ -3,8 +3,11 @@
 An async module that resolves when an element has entered the viewport at a certain percentage, using the Intersection Observer API.
 
 
-Install:
+#### Install:
+
 `npm i -S element-in-viewport`
+
+#### Example Usage:
 
 ```
 import elementInViewport from 'element-in-viewport';
@@ -20,9 +23,3 @@ import elementInViewport from 'element-in-viewport';
 })();
 ```
 
-
-### Example
-
-See /example.
-
-TODO: Live demo published via Github pages.
