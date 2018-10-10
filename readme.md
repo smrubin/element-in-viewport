@@ -1,6 +1,9 @@
-[![Build Status](https://travis-ci.com/smrubin/element-in-viewport.svg?branch=master)](https://travis-ci.com/smrubin/element-in-viewport)
-
 ## element-in-viewport
+
+[![npm](https://img.shields.io/npm/v/:package.svg)](https://www.npmjs.com/package/element-in-viewport)
+[![Build Status](https://travis-ci.com/smrubin/element-in-viewport.svg?branch=master)](https://travis-ci.com/smrubin/element-in-viewport)
+[![GitHub license](https://img.shields.io/github/license/smrubin/element-in-viewport.svg)](https://github.com/smrubin/element-in-viewport/blob/master/LICENSE)
+
 
 An async module that resolves when an element has entered the viewport at a certain percentage, using the Intersection Observer API.
 
