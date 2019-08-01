@@ -1,19 +1,10 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
 /**
  * @param targetElement - The element to watch for entry into the viewport
  * @param threshold - The threshold at which to trigger the Intersection event. Must be between 0 and 1. 0 indicates first pixel in viewport. 1 indicates every pixel of element in viewport.
  * @returns {Promise<IntersectionObserverEntry>}
  */
-var _default = function _default(targetElement) {
-  var threshold =
-    arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  return new Promise(function(resolve, reject) {
+export default (targetElement, threshold = 0) =>
+  new Promise((resolve, reject) => {
     if (!targetElement) {
       throw new Error("Must specify a target element.");
     }
@@ -22,13 +13,13 @@ var _default = function _default(targetElement) {
       throw new Error("Threshold must be between 0 and 1 inclusive.");
     }
 
-    var options = {
-      root: null,
-      // Document viewport
+    const options = {
+      root: null, // Document viewport
       rootMargin: "0px",
-      threshold: threshold // Visible amount of item shown in relation to root. 1.0 dictates that every pixel of element is visible.
+      threshold // Visible amount of item shown in relation to root. 1.0 dictates that every pixel of element is visible.
     };
-    var observer = new IntersectionObserver(function(entries, observer) {
+
+    const observer = new IntersectionObserver((entries, observer) => {
       /**
        * When the IntersectionObserver is instantiated the callback is ran once
        * as a detection for whether the element is in view or not
@@ -42,14 +33,12 @@ var _default = function _default(targetElement) {
       }
 
       observer.disconnect();
+
       return resolve(entries[0]);
     }, options);
+
     observer.observe(targetElement);
   });
-};
 
-exports["default"] = _default;
-
-var isThresholdValid = function isThresholdValid(threshold) {
-  return Number(threshold) === threshold && threshold >= 0 && threshold <= 1;
-};
+const isThresholdValid = threshold =>
+  Number(threshold) === threshold && threshold >= 0 && threshold <= 1;

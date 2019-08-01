@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Element in Viewport Detection Example</title>
 
     <style>
-        body {
-            height: 300vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      body {
+        height: 300vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        #targetElement {
-            width: 200px;
-            height: 200px;
-            background-color: blue;
-            text-align: center;
-            padding: 20px;
-        }
-
+      #targetElement {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        text-align: center;
+        padding: 20px;
+      }
     </style>
+  </head>
+  <body>
+    <div id="targetElement">Target Element</div>
 
-</head>
-<body>
-
-<div id="targetElement">Target Element</div>
-
-<script src="../lib/element-in-viewport.js" type="module"></script>
-<script src="example.js" type="module"></script>
-
-</body>
+    <script src="../src/element-in-viewport.js" type="module"></script>
+    <script src="example.js" type="module"></script>
+  </body>
 </html>
