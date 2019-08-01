@@ -1,3 +1,5 @@
+import IntersectionObserver from "intersection-observer";
+
 /**
  * @param targetElement - The element to watch for entry into the viewport
  * @param threshold - The threshold at which to trigger the Intersection event. Must be between 0 and 1. 0 indicates first pixel in viewport. 1 indicates every pixel of element in viewport.
@@ -11,6 +13,11 @@ export default (targetElement, threshold = 0) =>
 
     if (!isThresholdValid(threshold)) {
       throw new Error("Threshold must be between 0 and 1 inclusive.");
+    }
+
+    // Polyfill Intersection Observer for older browsers
+    if (!window.IntersectionObserver) {
+      window.IntersectionObserver = IntersectionObserver;
     }
 
     const options = {
