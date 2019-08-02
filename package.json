@@ -1,6 +1,6 @@
 {
   "name": "element-in-viewport",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Async module that resolves when a target element has entered the viewport at a threshold, using Intersection Observer API",
   "main": "lib/element-in-viewport.js",
   "scripts": {
