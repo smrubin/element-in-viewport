@@ -1,4 +1,4 @@
-import IntersectionObserver from "intersection-observer";
+import IntersectionObserverPolyfill from "intersection-observer";
 
 /**
  * @param targetElement - The element to watch for entry into the viewport
@@ -17,7 +17,7 @@ export default (targetElement, threshold = 0) =>
 
     // Polyfill Intersection Observer for older browsers
     if (!window.IntersectionObserver) {
-      window.IntersectionObserver = IntersectionObserver;
+      window.IntersectionObserver = IntersectionObserverPolyfill;
     }
 
     const options = {
