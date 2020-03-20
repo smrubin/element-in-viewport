@@ -8,7 +8,7 @@ An async module that resolves when an element has entered the viewport at a cert
 
 Polyfilled with the [Intersection Observer Polyfill](https://www.npmjs.com/package/intersection-observer)
 
-With the polyfill, `IntersectionObserver` has been tested an known to work in the following browsers:
+With the polyfill, `IntersectionObserver` has been tested and known to work in the following browsers:
 
 <table>
   <tr>
