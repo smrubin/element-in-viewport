@@ -39,14 +39,14 @@
     "intersection-observer": "^0.7.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.5.5",
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
-    "husky": "^3.0.2",
-    "prettier": "^1.18.2",
-    "pretty-quick": "^1.11.1",
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-jest": "^24.9.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^1.11.1"
   },
   "husky": {
     "hooks": {
